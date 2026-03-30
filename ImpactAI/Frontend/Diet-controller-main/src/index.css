@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #00523B;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: linear-gradient(to right, #fff 50%, #F8FDE9 50%, #EEFAD8 75%, #AFE6C2 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #00523B;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  margin-left: 1rem;
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex: 1;
+  height: 90vh;
+}
+/* Hero Text (Left Section) */
+.left-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align with navbar */
+}
+
+.left-section h1 {
+  font-family: "Italiana", serif; /* Use Italiana font */
+  font-size: 4rem; /* Make it prominent */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #00523B;
+}
+
+.left-section p,
+.chat-button ,
+.left-section h1{
+  margin-left: 1rem; /* Align with "How it works?" in navbar */
+}
+
+.chat-button {
+  background-color: #86F558;
+  color: #00523B;
+  border: none;
+  padding: 0.8rem 3rem; 
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; 
+  min-width: 200px; 
+  text-align: center; 
+  margin-top: 1rem;
+}
+
+.chat-button:hover {
+  background-color: #218838;
+  color: #00523B;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #F8FDE9, #EEFAD8, #AFE6C2, #B0E6ED, #F9FBFB);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  padding: 3rem;
+  text-align: center; /* Center text */
+}
+
+.ai-description {
+  font-size: 1.2rem;
+  color: #00523B;
+  max-width: 80%; /* Optional: Limits text width for readability */
+  line-height: 1.5;
+}
+.chat-image {
+  max-width: 65%; /* Ensures the image scales responsively */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  border-radius: 15px; /* Optional: Adds rounded corners */
+  
+}
